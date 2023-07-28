@@ -11,7 +11,6 @@ import {
 } from "../utils/constants";
 
 const VideoCard = ({ video: { id: videoId, snippet } }) => {
-    console.log('oioi ', videoId.videoId)
 
     return (
         <Card variant='' sx={{ width: {md: '300px', xs: '100%'}, boxShadow: 3 , borderRadius: 3}}>
