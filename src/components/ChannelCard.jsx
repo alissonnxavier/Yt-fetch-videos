@@ -43,7 +43,7 @@ const ChannelCard = ({ channelDetail, marginTop, linkToMyself }) => (
                 <Typography
                     variant='h6'
                 >
-                    {channelDetail?.snippet?.title}
+                    {channelDetail?.snippet?.title.slice(0,18)}
                     <CheckCircleIcon
                         sx={{ fontSize: 14, color: 'red', ml: '5px' }}
                     />
