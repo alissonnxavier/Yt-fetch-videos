@@ -19,13 +19,17 @@ const VideoDetail = () => {
         setVideoDetail(data.items[0]);
       });
 
-    fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`)
-      .then((data) => { setVideos(data.items) });
+    /* fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`)
+      .then((data) => { 
+        console.log(data) 
+      }); */
 
   }, [id]);
 
+  console.log(videos);
+
   if (!videoDetail?.snippet) return 'Loading...';
-  if (!videos) return 'Loading...';
+ /*  if (!videos) return 'Loading...'; */
 
   const {
     snippet: { title, channelId, channelTitle },

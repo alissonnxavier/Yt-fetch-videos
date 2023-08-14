@@ -8,7 +8,6 @@ const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
-  console.log(searchTerm)
 
   const handleSubmit = (e)=>{
     e.preventDefault();
